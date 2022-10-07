@@ -4,22 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta name="color-scheme" content="light dark">
-    <meta name="supported-color-schemes" content="light dark">
 
     <title>Plotly - Email Template</title>
     <style type="text/css">
 
         :root {
             color-scheme: light dark;
-            /* supported-color-schemes: light dark; */
         }
 
         @media (prefers-color-scheme: dark){
+            .dark-background {
+                background-color: #1e1e1e !important;
+            }
 
+            .title {
+                color: white !important;
+            }
+
+            [data-ogsc]
+            .dark-background {
+                background-color: #1e1e1e !important;
+            }
+            .title {
+                color: white !important;
+            }
         }
-
 
         body {
           margin: 0;
@@ -126,11 +136,9 @@
           width: 6rem;
         }
 
-     
         .border {
           border-top: 1px solid #E7E7E7;
             padding-bottom: 1rem;
-
         }
 
         .footer__info {
@@ -145,7 +153,6 @@
         }
 
     @media (min-width: 30em) {
-        
         h3 {
           font-size: 0.9rem;
           margin-bottom: 0;
@@ -419,7 +426,6 @@
             font-size: 2rem;
         }
 
-
         .footer__info {
             font-size: 1.8rem;
             margin-top: 0.5rem;
@@ -429,7 +435,6 @@
             width: 13rem;
         }
     }
-
     </style>
 </head>
 
@@ -439,8 +444,7 @@
             <img class="plotly" src="https://i.ibb.co/NYrnHMT/plotly-logo.png" alt="plotly-logo">
         </center>
     </div>
-
-    <section class="container">
+    <section class="container dark-background">
         <table>
             <!-- row 1 -->
             <tr>
@@ -469,9 +473,7 @@
                     </table>
                 </td>
             </tr>
-
             <!-- row 2 -->
-            
             <tr>
                 <td class="border" >
                     <table>
@@ -508,7 +510,6 @@
                             </td>
                         </tr>
                     </table>
-
                     <tr>
                         <td>
                             <table>
@@ -557,9 +558,7 @@
                     </tr>
                 </td>
             </tr>
-
             <!-- row 3 man 1 -->
-
             <tr>
                 <td class="border">
                     <tr>
@@ -600,9 +599,7 @@
                     </tr>
                 </td>
             </tr>
-
             <!-- row 3 man 2 -->
-
             <tr>
                 <td style=" border-bottom: 0.5px solid #e7e7e7; padding-bottom: 1rem; ";>
                     <table>
@@ -639,7 +636,6 @@
                     </table>
                 </td>
             </tr>
-
             <!-- footer -->
             <tr>
                 <td >
