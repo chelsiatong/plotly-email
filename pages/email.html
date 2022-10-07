@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plotly - Email Template</title>
+    <style type="text/css">
+        body {
+          margin: 0;
+          background-color: #F0F2FF;
+          padding: 0 3rem 3rem;
+          font-family: 'Roboto', sans-serif;
+        }
+
+        table {
+          border-spacing: 0;
+        }
+
+        td {
+          padding: 0;
+        }
+
+        img {
+          border: 0;
+        }
+
+        h3 {
+          font-size: 0.7rem;
+          margin-bottom: 0;
+        }
+
+        button {
+          background: linear-gradient(113.29deg, #7A76FF 1.85%, #7FE4FF 98.15%);
+          border: none;
+          color: white;
+          padding: 0.5rem 0.6rem;
+          border-radius: 8px;
+          text-transform: uppercase;
+          font-size: 0.5rem;
+          letter-spacing: 0.1em;
+        }
+
+        span {
+          color: #7A76FF;
+          font-weight: 600;
+        }
+
+        .plotly {
+          margin: 3rem 0 1rem;
+        }
+
+        .container {
+          background-color: white;
+          border-radius: 11px;
+          padding: 2rem 1rem;
+        }
+
+        .cartoon {
+            margin: auto;
+            display: block;
+            width: 10rem;
+        }
+
+        .title {
+          color: #1e1e1e;
+          margin: 1rem 0 0.5rem;
+          font-size: 0.9rem;
+        }
+
+        .subtitle,
+        .subtitle__two {
+          color: #7E8489;
+          font-size: 0.7rem;
+          margin: 0;
+          font-weight: 400;
+        }
+
+        .subtitle__two {
+          font-weight: lighter;
+          font-size: 0.6rem;
+          margin-top: 0.2rem;
+          padding-bottom: 1rem;
+        }
+
+        .information,
+        .information__title {
+          color: #7E8489;
+          font-size: 0.6rem;
+          font-weight: lighter;
+        }
+
+        .information__title {
+          font-weight: 400;
+          font-size: 0.7rem;
+        }
+
+        .picture__info {
+          color: #7E8489;
+          font-size: 0.5rem;
+          font-weight: lighter;
+        }
+
+        .man {
+          width: 5rem;
+        }
+
+     
+        .border {
+          border-top: 1px solid #E7E7E7;
+        }
+
+        .footer__info {
+          font-size: 0.6rem;
+          color: #7E8489;
+          margin: 0;
+        }
+
+        .socials {
+          padding: 2rem 0 0.5rem;
+        }
+
+    @media (min-width: 30em) {
+        
+        h3 {
+          font-size: 0.9rem;
+          margin-bottom: 0;
+        }
+
+        button {
+          padding: 0.6rem 0.7rem;
+          font-size: 0.6rem;
+        }
+
+        .cartoon {
+            width:14rem;
+        }
+
+        .plotly { 
+          margin: 3rem 0 2rem;
+        }
+
+        .container {
+          padding: 2rem 2rem;
+        }
+
+        .title {
+          font-size: 1.2rem;
+        }
+
+        .subtitle {
+          font-size: 0.9rem;
+        }
+
+        .subtitle__two {
+          font-size: 0.7rem;
+        }
+
+        .information {
+          font-size: 0.7rem;
+          margin-bottom: 0;
+        }
+
+        .information__title {
+          font-size: 0.8rem;
+          margin-bottom: 0;
+        }
+
+        .information__end {
+            margin-bottom: 1rem;
+        }
+
+        .picture__info {
+          font-size: 0.7rem;
+        }
+
+        .man {
+          width: 8rem;
+        }
+
+        .footer__info {
+          font-size: 0.7rem;
+        }
+    }
+
+    @media (min-width: 48em ) {
+        body {
+          padding: 0 5rem 4rem;
+        }
+        
+        h3 {
+          font-size: 1.1rem;
+        }
+
+        button {
+          padding: 0.7rem 0.7rem;
+          font-size: 0.7rem;
+        }
+
+        .cartoon {
+            width: 16rem;
+        }
+
+        .container {
+          padding: 2rem 3rem;
+        }
+
+        .title {
+          font-size: 1.5rem;
+        }
+
+        .subtitle {
+          font-size: 1.1rem;
+        }
+
+        .subtitle__two {
+          font-size: 0.8rem;
+        }
+
+        .information {
+          font-size: 0.8rem;
+        }
+
+        .information__title {
+          font-size: 1rem;
+        }
+
+        .picture__info {
+          font-size: 0.9rem;
+        }
+
+        .graph {
+            width: 15rem;
+        }
+
+        .man {
+          width: 12rem;
+          padding: 1rem 0;
+        }
+
+        .man__button {
+            padding-bottom: 2rem;
+        }
+
+        .man__title {
+            font-size: 1.2rem;
+            margin-top: 3rem;
+        }
+
+        .footer__info {
+          font-size: 0.9rem;
+        }
+    }
+
+    @media (min-width: 62rem) {
+        h3 {
+          font-size: 1.3rem;
+        }
+
+        button {
+          font-size: 0.8rem;
+        }
+
+        .cartoon {
+            width: 20rem;
+        }
+
+        .title {
+          font-size: 2rem;
+        }
+
+        .subtitle {
+          font-size: 1.4rem;
+        }
+
+        .subtitle__two {
+          font-size: 1.2rem;
+        }
+
+        .information {
+          font-size: 1rem;
+        }
+
+        .information__title {
+          font-size: 1.3rem;
+        }
+
+        .picture__info {
+          font-size: 1rem;
+        }
+
+        .graph {
+            width: 20rem;
+        }
+
+        .man {
+          width: 18rem;
+          padding: 1rem ;
+        }
+
+        .man__button {
+            padding-bottom: 5rem;
+        }
+
+        .man__title {
+            font-size: 1.8rem;
+        }
+
+        .man__text {
+            font-size: 1.2rem;
+        }
+    }
+
+    @media (min-width: 80rem) {
+        h3 {
+          font-size: 2rem;
+        }
+
+        button {
+          font-size: 1.5rem;
+          padding: 1.5rem 2rem;
+        }
+
+        .container {
+            padding-bottom: 4rem;
+        }
+
+        .cartoon {
+            width: 30rem;
+        }
+
+        .title {
+          font-size: 2.5rem;
+          padding-top: 1rem;
+        }
+
+        .subtitle {
+          font-size: 2rem;
+        }
+
+        .subtitle__two {
+          font-size: 1.8rem;
+        }
+
+        .information {
+          font-size: 1.7rem;
+        }
+
+        .information__title {
+          font-size: 2rem;
+        }
+
+        .picture__info {
+          font-size: 1.8rem;
+        }
+
+        .graph {
+            width: 30rem;
+        }
+
+        .man {
+          width: 25rem;
+        }
+
+        .man__button {
+            padding-bottom: 5rem;
+        }
+
+        .man__title {
+            font-size: 2.5rem;
+        }
+
+        .man__text {
+            font-size: 2rem;
+        }
+
+
+        .footer__info {
+            font-size: 1.8rem;
+            margin-top: 0.5rem;
+        }
+
+        .socials {
+            width: 13rem;
+        }
+    }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <center>
+          <img class="plotly" src='../src/assets/logo/plotly-logo.svg' alt="plotly-logo" />
+        </center>
+    </div>
+
+    <section class="container" >
+        <table>
+
+            <!-- row 1 -->
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td >
+                                <img class="cartoon" src='../src/assets/images/cartoon.svg' alt='cartoon-pic' width="200px" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th style="text-align: left;">
+                                    <h1 class="title">Dash Club -2022 Edition </h1>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2 class="subtitle">Hello Dash Club and Happy 2020</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3 class="subtitle__two">It has been a while, and we've got lots of good stuff from the last few months to share.</h3>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- row 2 -->
+            
+            <tr>
+                <td class="border" >
+                    <table>
+                        <tr>
+                            <td>
+                              <p class="information__title">
+                                We spent the fall working on page load performance:
+                              </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                              <p class="information">
+                                1. Previously, we loaded all of the JavaScript from all of the component librar- ies upfront.
+                                Now,
+                                we load them on demand. This is called “lazy loading.” So, if your home page doesn't display a
+                                graph, then the plotly.js library isn't loaded until you navigate to the page that does.
+                              </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                              <p class="information">
+                                2. We started caching your app’s JavaScript and CSS assets.
+
+                              </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                              <p class="information information__end">
+                                With these improvements, our documentation (https:dash.plot.ly) loads much, much faster. Your
+                                apps should too!
+                              </p>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td  >
+                                      <img class="graph" src="../src/assets/images/dark-graph.svg" alt='dark-graph' width="100px"></img>
+                                    </td>
+                                    <td  >
+                                      <img class="graph" src="../src/assets/images/light-graph.svg" alt='light-graph' width="100px"></img>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                      <h3>Lorem ipsum text</h3>
+                                    </td>
+                                    <td>
+                                      <h3>Lorem ipsum text</h3>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                      <p class="picture__info">
+                                        Lorem ipsum dolor sit amet, consecte- tur adipiscing elit, sed do eiusmod tempor.
+                                      </p>
+                                    </td>
+                                    <td>
+                                      <p class="picture__info">
+                                        Lorem ipsum dolor sit amet, consecte- tur adipiscing elit, sed do eiusmod tempor.
+                                      </p>
+                                    </td>
+                                </tr>
+                                <tr >
+                                    <td style="padding-bottom: 1rem";>
+                                      <button class="button">
+                                        Read More
+                                      </button>
+                                    </td>
+                                    <td style="padding-bottom: 1rem";>
+                                      <button class="button">
+                                        Read More
+                                      </button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </td>
+            </tr>
+
+            <!-- row 3 man 1 -->
+
+            <tr>
+                <td class="border">
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td rowSpan='3' style="padding-right: 1rem";>
+                                        <img class='man' src='../src/assets/images/man.svg' alt='man-profile'></img>
+                                    </td>
+                                    <td>
+                                        <h3  class="man__title">
+                                          Lorem ipsum text
+                                        </h3>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="picture__info  man__text">
+                                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidi- dunt ut
+                                          labore
+                                          et
+                                          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                          aliquip
+                                          ex
+                                          ea commodo consequat.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="man__button">
+                                      <button>
+                                        Read More
+                                      </button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </td>
+            </tr>
+
+            <!-- row 3 man 2 -->
+
+            <tr>
+                <td style=" border-bottom: 0.5px solid #e7e7e7; padding-bottom: 1rem; ";>
+                    <table>
+                        <tr>
+                            <td>
+                                <h3 class="man__title">
+                                    Lorem ipsum text
+                                </h3>
+                            </td>
+                            <td rowSpan='3' style="padding-left: 1rem";>
+                                <img class="man" src='../src/assets/images/man.svg' alt='man-profile'></img>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                              <p class="picture__info man__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidi- dunt ut
+                                labore
+                                et
+                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip
+                                ex
+                                ea commodo consequat.
+                              </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="man__button" >
+                              <button>
+                                Read More
+                              </button>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- footer -->
+            <tr>
+                <td >
+                  <table>
+                    <tr>
+                      <td  >
+                        <img class="socials" src='../src/assets/logo/socials.svg' alt='socials-logo'></img>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p class="footer__info" >Ⓒ 2022 Plotly. All rights reserved.</p>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td>
+                        <p  class="footer__info">Click <span> HERE </span> to unsubscribe or change your email preferences.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+        </table>
+    </section>
+</body>
+</html>
